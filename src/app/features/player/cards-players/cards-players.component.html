@@ -1,0 +1,14 @@
+<div class="container" id="div39">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="div40">
+    <ng-container *ngFor="let player of players; let i = index">
+      <div class="col card-img-container" id="div41">
+        <a routerLink="/player-stats/{{ player.name }}" class="card-link">
+          <img [src]="player.image" [alt]="player.name" class="player-image" />
+          <div class="top-info" id="div42">
+            <span class="player-name">{{ player.name }}</span>
+          </div>
+        </a>
+      </div>
+    </ng-container>
+  </div>
+</div>

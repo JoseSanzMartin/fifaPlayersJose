@@ -1,0 +1,91 @@
+.navigation {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  width: 100%;
+}
+
+.nav-section {
+  background-color: #1c1f26;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  padding: 0 1rem;
+  align-items: center;
+  position: relative;
+}
+
+.url-history {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.language-selector {
+  display: flex;
+  gap: 10px;
+}
+
+.flag-icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.history-section {
+  height: 60%;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: 80px;
+  height: 40px;
+  margin-right: 5rem;
+  margin-top: 1rem;
+}
+
+.tittle {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-right: 1rem;
+  font-family: "Roboto Slab", serif;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1rem;
+}
+
+a {
+  margin-right: 5px;
+}
+
+a span {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  a {
+    font-size: 12px;
+    margin-right: 3px;
+  }
+
+  .tittle {
+    font-size: 18px;
+    letter-spacing: 2px;
+  }
+
+  .history-section {
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    top: 100%;
+    right: 0;
+  }
+}
