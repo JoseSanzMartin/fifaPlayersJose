@@ -1,27 +1,116 @@
-# FifaPlayersJose
+# Fifa Players
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
+Hi Jordi!
 
-## Development server
+This is my fifa players project, I hope you like it.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Features
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+This project features four players selected from different soccer clubs and shows their statistics, videos of their best plays and career history.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Screenshots
 
-## Running unit tests
+Desktop navbar:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![nav-fifa](https://user-images.githubusercontent.com/83543738/229783584-62b6bcc9-e577-4baa-a409-b16a4efdee56.PNG)
 
-## Running end-to-end tests
+Desktop body:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![body](https://user-images.githubusercontent.com/83543738/229783738-013cee26-55dd-4e12-aa15-3d4bf59175b1.PNG)
 
-## Further help
+Desktop footer imported by my library:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![footer](https://user-images.githubusercontent.com/83543738/229783952-78067129-a2c9-44f7-81a5-13061354661d.PNG)
+
+
+
+Player stats component view:
+
+![player-stats](https://user-images.githubusercontent.com/83543738/229784755-e800b642-73a5-40d5-b0fe-a4a4791c5cbf.PNG)
+
+Highlights component view:
+
+![Highlights](https://user-images.githubusercontent.com/83543738/229785243-c8a71731-b335-4b28-a71a-65ef939c2fc0.PNG)
+
+PlayerCareer component view:
+
+![player-career](https://user-images.githubusercontent.com/83543738/229785546-4794d294-c8b8-4317-9185-fcca153224a5.PNG)
+
+
+Mobile:
+
+Cards component:
+
+![cardsmobil](https://user-images.githubusercontent.com/83543738/229785847-26aef3df-4113-47c7-bf16-bf1adf59f070.PNG)
+
+Player stats:
+
+![playerstats-mobil](https://user-images.githubusercontent.com/83543738/229786050-5c159917-057c-4cfc-a813-05df009b5a18.PNG)
+
+Highlights:
+
+![Highlights-mobile](https://user-images.githubusercontent.com/83543738/229786284-bab4ff7f-86de-4693-85c4-2e84c5992ce4.PNG)
+
+Player career:
+
+![playercareer-mobile](https://user-images.githubusercontent.com/83543738/229786483-e3321633-e2a2-40f7-aca9-ccea3b1bebd6.PNG)
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/JoseSanzMartin/fifaPlayers.git
+```
+
+Go to the project directory
+
+```bash
+  cd fifaPlayers
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+```bash
+  npm install footer-jose-v
+```
+
+```npm install @ngx-translate/core @ngx-translate/http-loader --save```
+
+Start the dev server and open a new window
+
+```bash
+  ng server -o
+```
+
+
+## Deployment
+
+My project is available at:
+
+https://fifa-players-alpha.vercel.app/cards-players
+
+## Color Reference
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Nav Color | #343A40 |
+| Footer Color | #1C1F26 |
+| Body background | #FFFFFF |
+
+
+## Authors
+
+- [José Sanz Martín](https://github.com/JoseSanzMartin)
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
