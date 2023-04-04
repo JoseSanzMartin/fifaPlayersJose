@@ -13,6 +13,8 @@ import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
 import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 
+import { CoreModule } from "./core/interceptor/core.module";
+
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
 }
@@ -28,6 +30,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   imports: [
     BrowserModule,
+    CoreModule,
     AppRoutingModule,
     FooterJoseVModule,
     HttpClientModule,
