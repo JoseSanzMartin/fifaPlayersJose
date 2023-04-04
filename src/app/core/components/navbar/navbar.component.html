@@ -1,0 +1,55 @@
+<div class="navigation d-flex flex-column" id="div1">
+    <div
+      class="nav-section bg-dark text-white d-flex align-items-center justify-content-end h-15"
+      id="div2"
+    >
+      <div class="tittle" id="div3">MVP FIFA 23</div>
+      <div class="language-selector d-flex gap-2" id="div4">
+        <img
+          src="assets/languages/es_flag.png"
+          alt="Español"
+          class="flag-icon"
+          (click)="switchLanguage('es')"
+        />
+        <img
+          src="assets/languages/ca_flag.png"
+          alt="Catalán"
+          class="flag-icon"
+          (click)="switchLanguage('cat')"
+        />
+        <img
+          src="assets/languages/en_flag.png"
+          alt="Inglés"
+          class="flag-icon"
+          (click)="switchLanguage('en')"
+        />
+      </div>
+    </div>
+    <div
+      class="history-section bg-white px-3 py-2 d-flex align-items-center"
+      id="div5"
+    >
+      <div id="div6">
+        <a routerLink="/" class="text-white text-decoration-none">
+          <img
+            src="assets/logos/FIFA_23_logo.svg.png"
+            alt="Logo"
+            class="logo me-2"
+          />
+        </a>
+      </div>
+      <ng-container *ngFor="let item of navigation.getHistory(); let i = index">
+        <ng-container *ngIf="i !== 0">
+          <span class="separator">/</span>
+        </ng-container>
+        <a href="#" (click)="navigateTo(item.route, $event)">
+          <span class="url-history"
+            >{{ item.labelKey | translate }}: {{ item.name }}</span
+          >
+        </a>
+      </ng-container>
+      <button class="btn btn-secondary" (click)="navigation.goBack()">
+        {{ "ATRAS" | translate }}
+      </button>
+    </div>
+  </div>
