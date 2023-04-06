@@ -1,24 +1,27 @@
-<div class="container" id="div7">
-  <h2 class="mb-4 text-center">{{ "TRAYECTORIA-TITULO" | translate }}</h2>
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>{{ "TEMPORADA" | translate }}</th>
-        <th>{{ "CLUB" | translate }}</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let season of player.seasons">
-        <td>{{ season.year }}</td>
-        <td>
-          <img
-            [src]="'../assets/logos/' + season.club.logo"
-            [alt]="season.club.name"
-            width="50"
-          />
-          <span class="club-tittle">{{ season.club.name }}</span>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+<div class="button">
+  <button class="btn-goBack ml-auto" (click)="navigation.goBack()">
+    {{ "ATRAS" | translate }}
+  </button>
 </div>
+<h2 class="mb-4 text-center">{{ "TRAYECTORIA-TITULO" | translate }}</h2>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>{{ "TEMPORADA" | translate }}</th>
+      <th>{{ "CLUB" | translate }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let season of player.seasons">
+      <td>{{ season.year }}</td>
+      <td>
+        <img
+          [src]="'../assets/logos/' + season.club.logo"
+          [alt]="season.club.name"
+          width="50"
+        />
+        <span class="club-tittle">{{ season.club.name }}</span>
+      </td>
+    </tr>
+  </tbody>
+</table>

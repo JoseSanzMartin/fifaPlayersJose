@@ -1,11 +1,3 @@
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .table {
   width: 100%;
   max-width: 100%;
@@ -54,16 +46,10 @@ img {
   }
 }
 
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-    margin-bottom: 5rem;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1140px;
-    margin-bottom: 5rem;
-  }
+.btn-goBack {
+  background-color: #1c1f26;
+  border-color: #1c1f26;
+  color: white;
+  font-weight: bold;
+  margin: 1rem;
 }

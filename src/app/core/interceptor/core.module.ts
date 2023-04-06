@@ -1,7 +1,7 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { HTTP_INTERCEPTORS, HttpClientModule } from "@angular/common/http";
-import { ErrorInterceptor } from "./error.interceptor";
+import { HttpErrorInterceptor } from "./error.interceptor";
 import { NotFoundComponent } from "../components/not-found/not-found.component";
 
 @NgModule({
@@ -10,7 +10,7 @@ import { NotFoundComponent } from "../components/not-found/not-found.component";
   providers: [
     {
       provide: HTTP_INTERCEPTORS,
-      useClass: ErrorInterceptor,
+      useClass: HttpErrorInterceptor,
       multi: true,
     },
   ],

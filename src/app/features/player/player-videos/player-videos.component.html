@@ -1,57 +1,55 @@
-<div class="main-container" id="div23">
-  <div class="container" id="div24">
-    <div class="row" id="div25">
-      <div class="col-12 text-center" id="div26">
-        <h2 class="section-title">{{ "JUGADAS" | translate }}</h2>
-      </div>
+<div>
+  <button class="btn-goBack ml-auto" (click)="navigation.goBack()">
+    {{ "ATRAS" | translate }}
+  </button>
+</div>
+<div class="row" id="div25">
+  <div class="col-12 text-center" id="div26">
+    <h2 class="section-title">{{ "JUGADAS" | translate }}</h2>
+  </div>
+</div>
+<div class="row" id="div27">
+  <div class="col-12 col-md-6" id="div28">
+    <div class="embed-responsive embed-responsive-16by9 mb-4" id="div29">
+      <iframe
+        class="embed-responsive-item"
+        [src]="getSafeUrl(player.video1)"
+        allowfullscreen
+      ></iframe>
     </div>
-    <div class="row" id="div27">
-      <div class="col-12 col-md-6" id="div28">
-        <div class="embed-responsive embed-responsive-16by9 mb-4" id="div29">
-          <iframe
-            class="embed-responsive-item"
-            [src]="getSafeUrl(player.video1)"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <div class="col-12 col-md-6" id="div30">
-        <div class="embed-responsive embed-responsive-16by9 mb-4" id="div31">
-          <iframe
-            class="embed-responsive-item"
-            [src]="getSafeUrl(player.video2)"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <div class="col-12 col-md-6" id="div32">
-        <div class="embed-responsive embed-responsive-16by9 mb-4" id="div33">
-          <iframe
-            class="embed-responsive-item"
-            [src]="getSafeUrl(player.video3)"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <div class="col-12 col-md-6" id="div34">
-        <div class="embed-responsive embed-responsive-16by9 mb-4" id="div35">
-          <iframe
-            class="embed-responsive-item"
-            [src]="getSafeUrl(player.video4)"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
+  </div>
+  <div class="col-12 col-md-6" id="div30">
+    <div class="embed-responsive embed-responsive-16by9 mb-4" id="div31">
+      <iframe
+        class="embed-responsive-item"
+        [src]="getSafeUrl(player.video2)"
+        allowfullscreen
+      ></iframe>
     </div>
-    <div class="row mt-5" id="div36">
-      <div class="col text-center" id="div37">
-        <button
-          class="btn btn-primary"
-          routerLink="/player-career/{{ player.name }}"
-        >
-          {{ "TRAYECTORIA" | translate }}
-        </button>
-      </div>
+  </div>
+  <div class="col-12 col-md-6" id="div32">
+    <div class="embed-responsive embed-responsive-16by9 mb-4" id="div33">
+      <iframe
+        class="embed-responsive-item"
+        [src]="getSafeUrl(player.video3)"
+        allowfullscreen
+      ></iframe>
     </div>
+  </div>
+  <div class="col-12 col-md-6" id="div34">
+    <div class="embed-responsive embed-responsive-16by9 mb-4" id="div35">
+      <iframe
+        class="embed-responsive-item"
+        [src]="getSafeUrl(player.video4)"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>
+<div class="row mt-5" id="div36">
+  <div class="col text-center" id="div37">
+    <button class="btn btn-primary" (click)="goToPlayerCareer()">
+      {{ "TRAYECTORIA" | translate }}
+    </button>
   </div>
 </div>

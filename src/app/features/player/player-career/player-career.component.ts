@@ -13,7 +13,7 @@ export class PlayerCareerComponent {
   player: Player = {} as Player;
 
   constructor(
-    private navigationService: NavigationService,
+    public navigation: NavigationService,
     private playerService: CardsPlayersService,
     private route: ActivatedRoute,
     private router: Router
@@ -23,14 +23,10 @@ export class PlayerCareerComponent {
     this.getPlayer();
   }
 
-  goBack() {
-    this.navigationService.goBack();
-  }
-
   getPlayer(): void {
-    const name = String(this.route.snapshot.paramMap.get("name"));
+    const id = Number(this.route.snapshot.paramMap.get("id"));
     this.playerService
-      .getPlayer(name)
+      .getPlayer(Number(id))
       .subscribe((player) => (this.player = player));
   }
 }

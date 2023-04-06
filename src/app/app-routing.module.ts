@@ -7,13 +7,66 @@ import { PlayerVideosComponent } from "../app/features/player/player-videos/play
 import { NotFoundComponent } from "./core/components/not-found/not-found.component";
 
 const routes: Routes = [
-  { path: "", redirectTo: "cards-players", pathMatch: "full" },
-  { path: "cards-players", component: CardsPlayersComponent },
-  { path: "player-stats/:name", component: PlayerStatsComponent },
-  { path: "player-videos/:name", component: PlayerVideosComponent },
-  { path: "player-career/:name", component: PlayerCareerComponent },
-  { path: "404", component: NotFoundComponent },
-  { path: "**", redirectTo: "404" },
+  {
+    path: "",
+    data: {
+      breadcrumb: "",
+    },
+    children: [
+      {
+        path: "",
+        data: {
+          breadcrumb: null,
+        },
+        component: CardsPlayersComponent,
+      },
+      {
+        path: "player-stats/:id",
+        data: {
+          breadcrumb: "Estadísticas",
+        },
+        children: [
+          {
+            path: "",
+            data: {
+              breadcrumb: null,
+            },
+            component: PlayerStatsComponent,
+          },
+          {
+            path: "player-videos/:id",
+            data: {
+              breadcrumb: "Videos",
+            },
+            children: [
+              {
+                path: "",
+                data: {
+                  breadcrumb: null,
+                },
+                component: PlayerVideosComponent,
+              },
+              {
+                path: "player-career/:id",
+                data: {
+                  breadcrumb: "Trayectoria",
+                },
+                component: PlayerCareerComponent,
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    path: "not-found",
+    component: NotFoundComponent,
+  },
+  {
+    path: "**",
+    redirectTo: "not-found",
+  },
 ];
 
 @NgModule({

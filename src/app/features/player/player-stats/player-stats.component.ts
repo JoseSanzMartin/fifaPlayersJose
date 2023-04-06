@@ -13,27 +13,26 @@ import { Router } from "@angular/router";
 export class PlayerStatsComponent {
   player: Player = {} as Player;
   constructor(
-    private navigationService: NavigationService,
+    public navigation: NavigationService,
     public playerService: CardsPlayersService,
     private route: ActivatedRoute,
     private router: Router
   ) {}
 
-  goBack() {
-    this.navigationService.goBack();
-  }
   ngOnInit(): void {
     this.getPlayer();
   }
 
   getPlayer(): void {
-    const name = String(this.route.snapshot.paramMap.get("name"));
+    const id = Number(this.route.snapshot.paramMap.get("id"));
     this.playerService
-      .getPlayer(name)
+      .getPlayer(Number(id))
       .subscribe((player) => (this.player = player));
   }
 
   goToPlayerVideos() {
-    this.router.navigate(["/player-videos", this.player.name]);
+    this.router.navigate(["./player-videos", this.player.id], {
+      relativeTo: this.route,
+    });
   }
 }
