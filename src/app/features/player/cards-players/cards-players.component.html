@@ -3,7 +3,10 @@
     <ng-container *ngFor="let player of players; let i = index">
       <div class="col card-img-container" id="div41">
         <a routerLink="/player-stats/{{ player.id }}" class="card-link">
-          <img [src]="player.image" [alt]="player.name" class="player-image" />
+          <div
+            class="player-image-bg"
+            [style.background-image]="'url(' + player.image + ')'"
+          ></div>
           <div class="top-info" id="div42">
             <span class="player-name">{{ player.name }}</span>
           </div>
