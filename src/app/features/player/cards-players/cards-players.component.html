@@ -1,14 +1,15 @@
-<div class="container" id="div39">
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="div40">
-    <ng-container *ngFor="let player of players; let i = index">
-      <div class="col card-img-container" id="div41">
-        <a routerLink="/player-stats/{{ player.id }}" class="card-link">
+<div class="container" id="div2">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4" id="div3">
+    <ng-container *ngFor="let player of players; let i = index" id="ng-con1">
+      <div class="col card-img-container" id="div4">
+        <a routerLink="/player-stats/{{ player.id }}" class="card-link" id="a1">
           <div
+            id="div5"
             class="player-image-bg"
             [style.background-image]="'url(' + player.image + ')'"
           ></div>
-          <div class="top-info" id="div42">
-            <span class="player-name">{{ player.name }}</span>
+          <div class="top-info" id="div6">
+            <span class="player-name" id="span1">{{ player.name }}</span>
           </div>
         </a>
       </div>
