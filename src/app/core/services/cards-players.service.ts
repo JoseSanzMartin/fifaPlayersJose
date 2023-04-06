@@ -372,8 +372,8 @@ export class CardsPlayersService {
   getPlayers(): Player[] {
     return this.players;
   }
-  getPlayer(name: string): Observable<Player> {
-    const player = this.players.find((h) => h.name === name)!;
+  getPlayer(id: number): Observable<Player> {
+    const player = this.players.find((h) => h.id === id)!;
     return of(player);
   }
 }

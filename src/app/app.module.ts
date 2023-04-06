@@ -12,8 +12,9 @@ import { NavigationService } from "./core/services/navigation-service.service";
 import { TranslateLoader, TranslateModule } from "@ngx-translate/core";
 import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
-
+import { BreadcrumbModule } from "primeng/breadcrumb";
 import { CoreModule } from "./core/interceptor/core.module";
+import { BreadcrumbComponent } from "./core/components/breadcrumbs/breadcrumbs.component";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -27,6 +28,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     PlayerVideosComponent,
     PlayerCareerComponent,
     NavbarComponent,
+    BreadcrumbComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,6 +36,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     FooterJoseVModule,
     HttpClientModule,
+    BreadcrumbModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

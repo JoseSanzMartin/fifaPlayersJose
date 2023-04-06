@@ -14,7 +14,7 @@ export class PlayerVideosComponent {
   player: Player = {} as Player;
 
   constructor(
-    private navigationService: NavigationService,
+    public navigation: NavigationService,
     private sanitizer: DomSanitizer,
     private playerService: CardsPlayersService,
     private route: ActivatedRoute,
@@ -25,14 +25,10 @@ export class PlayerVideosComponent {
     this.getPlayer();
   }
 
-  goBack() {
-    this.navigationService.goBack();
-  }
-
   getPlayer(): void {
-    const name = String(this.route.snapshot.paramMap.get("name"));
+    const id = Number(this.route.snapshot.paramMap.get("id"));
     this.playerService
-      .getPlayer(name)
+      .getPlayer(id)
       .subscribe((player) => (this.player = player));
   }
 
@@ -41,6 +37,8 @@ export class PlayerVideosComponent {
   }
 
   goToPlayerCareer() {
-    this.router.navigate(["/player-career", this.player.name]);
+    this.router.navigate(["./player-career", this.player.id], {
+      relativeTo: this.route,
+    });
   }
 }
