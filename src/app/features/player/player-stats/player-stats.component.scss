@@ -1,6 +1,5 @@
-body {
-  background-color: #10354f;
-}
+@import "../../../mixins";
+
 .button {
   position: absolute;
   top: 0;
@@ -21,13 +20,15 @@ body {
 }
 
 .card-inner {
-  display: flex;
+  flex-direction: column;
 }
 
 .player-image {
-  height: 100%;
+  @include center-image();
+  height: auto;
   object-fit: cover;
-  padding: 1rem;
+  padding: 1rem 0;
+  border-radius: 0.25rem 0 0 0.25rem;
 }
 
 .card-body {
@@ -50,10 +51,11 @@ body {
 
 .bottom-info {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
+
 .card-text-pair {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -65,35 +67,29 @@ body {
   margin: 0.5rem 0;
 }
 
-.btn-goBack {
-  background-color: #1c1f26;
-  border-color: #1c1f26;
-  color: white;
-  font-weight: bold;
-  border-radius: 0.25rem;
-}
-
+.btn-goBack,
 .btn-primary {
-  background-color: #1c1f26;
-  border-color: #1c1f26;
-  font-weight: bold;
+  @include button-style(#1c1f26, #1c1f26, white);
 }
 
-@media (max-width: 768px) {
+.btn {
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 769px) {
   .card-inner {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
   }
 
   .card-link {
-    display: flex;
-    justify-content: center;
+    display: block;
   }
 
   .player-image {
     height: 100%;
-    height: auto;
-    padding: 1rem 0;
-    border-radius: 0.25rem 0 0 0.25rem;
+    padding: 1rem;
+    border-radius: 0;
   }
 
   .card-body {
@@ -101,11 +97,11 @@ body {
   }
 
   .bottom-info {
-    grid-template-columns: repeat(2, 1fr);
-    font-size: 1rem;
+    grid-template-columns: repeat(5, 1fr);
+    font-size: 1.2rem;
   }
 
   .btn {
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
 }

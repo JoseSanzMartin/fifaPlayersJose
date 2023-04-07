@@ -1,6 +1,7 @@
+@import "../../../mixins";
+
 .table {
   width: 100%;
-  max-width: 100%;
   margin-bottom: 1rem;
   border-collapse: separate;
   border-spacing: 0;
@@ -38,6 +39,15 @@ img {
   margin: 0 auto;
 }
 
+.club-tittle {
+  text-align: center;
+}
+
+.btn-goBack {
+  @include button-style(#1c1f26, #1c1f26, white);
+  margin: 1rem;
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
@@ -48,17 +58,4 @@ img {
     display: inline;
     margin: 20px;
   }
-
-  .club-tittle {
-    text-align: center;
-  }
-}
-
-.btn-goBack {
-  background-color: #1c1f26;
-  border-color: #1c1f26;
-  color: white;
-  font-weight: bold;
-  margin: 1rem;
-  border-radius: 0.25rem;
 }

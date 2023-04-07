@@ -1,7 +1,7 @@
 .not-found-container {
   text-align: center;
   padding: 2rem;
-  background-image: url("/assets/images/vueling.png");
+  background-image: url("/assets/images/vueling.jpg");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,5 +13,29 @@
 
   .btn {
     margin-top: 1rem;
+  }
+
+  .vueling:before {
+    content: "flying";
+    animation-name: replacement;
+    animation-duration: 4s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: absolute;
+  }
+
+  @keyframes replacement {
+    0% {
+      content: "vueling";
+    }
+    50% {
+      content: "flight";
+    }
+    75% {
+      content: "vueling";
+    }
+    100% {
+      content: "flight";
+    }
   }
 }
