@@ -1,23 +1,15 @@
+@import "../../../mixins";
+
 .section-title {
   margin-bottom: 2rem;
 }
 
-.btn-goBack {
-  background-color: #1c1f26;
-  border-color: #1c1f26;
-  color: white;
-  font-weight: bold;
-  border-radius: 0.25rem;
-}
-
+.btn-goBack,
 .btn-primary {
-  background-color: #1c1f26;
-  border-color: #1c1f26;
-  color: white;
-  font-weight: bold;
+  @include button-style(#1c1f26, #1c1f26, white);
 }
 
-@media (max-width: 768px) {
+@include respond-to(xs, sm) {
   .btn-primary {
     margin-bottom: 2rem;
   }
