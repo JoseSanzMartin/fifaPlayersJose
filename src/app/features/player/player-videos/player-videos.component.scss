@@ -1,5 +1,14 @@
 @import "../../../mixins";
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
 .section-title {
   margin-bottom: 2rem;
 }

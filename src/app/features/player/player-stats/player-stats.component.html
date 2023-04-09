@@ -1,76 +1,78 @@
-<div class="button" id="div7">
-  <button class="btn-goBack ml-auto" id="btn1" (click)="navigation.goBack()">
-    {{ "ATRAS" | translate }}
-  </button>
-</div>
-<h2 class="mb-4 text-center" id="h2-1">{{ "ESTADISTICAS" | translate }}</h2>
-<div class="row" id="div8">
-  <div class="card" id="div9">
-    <div class="card-inner" id="div10">
-      <a class="card-link" target="_blank" id="a2">
-        <img
-          width="170"
-          [src]="player.image2"
-          [alt]="player.name"
-          class="player-image"
-          id="img2"
-        />
-      </a>
-      <div class="card-body" id="div11">
-        <div class="top-info" id="div12">
-          <div class="card-title" id="div13">
-            <span class="player-name" id="span1">{{ player.name }}</span>
+<div class="container">
+  <div class="button" id="div7">
+    <button class="btn-goBack ml-auto" id="btn1" (click)="navigation.goBack()">
+      {{ "ATRAS" | translate }}
+    </button>
+  </div>
+  <h2 class="mb-4 text-center" id="h2-1">{{ "ESTADISTICAS" | translate }}</h2>
+  <div class="row" id="div8">
+    <div class="card" id="div9">
+      <div class="card-inner" id="div10">
+        <a class="card-link" target="_blank" id="a2">
+          <img
+            width="170"
+            [src]="player.image2"
+            [alt]="player.name"
+            class="player-image"
+            id="img2"
+          />
+        </a>
+        <div class="card-body" id="div11">
+          <div class="top-info" id="div12">
+            <div class="card-title" id="div13">
+              <span class="player-name" id="span1">{{ player.name }}</span>
+            </div>
           </div>
-        </div>
-        <div class="bottom-info" id="div14">
-          <hr class="separator-line" id="hr1" />
-          <div class="card-text-pair" id="div15">
-            <span id="span2">{{ "POSICION" | translate }}</span>
-            <span id="span3">{{ player.position }}</span>
-          </div>
-          <div class="card-text-pair" id="div16">
-            <span id="span4">{{ "VALORACION" | translate }}</span>
-            <span id="span5">{{ player.overall_rating }}</span>
-          </div>
-          <div class="card-text-pair" id="div17">
-            <span id="span6">{{ "RITMO" | translate }}</span>
-            <span id="span7">{{ player.pace }}</span>
-          </div>
-          <div class="card-text-pair" id="div18">
-            <span id="span8">{{ "TIRO" | translate }}</span>
-            <span id="span9">{{ player.shooting }}</span>
-          </div>
-          <div class="card-text-pair" id="div19">
-            <span id="span10">{{ "PASE" | translate }}</span>
-            <span id="span11">{{ player.passing }}</span>
-          </div>
-          <div class="card-text-pair" id="div20">
-            <span id="span12">{{ "REGATE" | translate }}</span>
-            <span id="span13">{{ player.dribbling }}</span>
-          </div>
-          <div class="card-text-pair" id="div21">
-            <span id="span14">{{ "DEFENSA" | translate }}</span>
-            <span id="span15">{{ player.defence }}</span>
-          </div>
-          <div class="card-text-pair" id="div22">
-            <span id="span16">{{ "FISICO" | translate }}</span>
-            <span id="span17">{{ player.physical }}</span>
-          </div>
-          <div class="card-text-pair" id="div23">
-            <span id="span18">{{ "EDAD" | translate }}</span>
-            <span id="span19">{{ player.age }}</span>
-          </div>
-          <div class="card-text-pair" id="div24">
-            <span id="span20">{{ "NACIONALIDAD" | translate }}</span>
-            <span id="span21">{{ player.nationality }}</span>
+          <div class="bottom-info" id="div14">
+            <hr class="separator-line" id="hr1" />
+            <div class="card-text-pair" id="div15">
+              <span id="span2">{{ "POSICION" | translate }}</span>
+              <span id="span3">{{ player.position }}</span>
+            </div>
+            <div class="card-text-pair" id="div16">
+              <span id="span4">{{ "VALORACION" | translate }}</span>
+              <span id="span5">{{ player.overall_rating }}</span>
+            </div>
+            <div class="card-text-pair" id="div17">
+              <span id="span6">{{ "RITMO" | translate }}</span>
+              <span id="span7">{{ player.pace }}</span>
+            </div>
+            <div class="card-text-pair" id="div18">
+              <span id="span8">{{ "TIRO" | translate }}</span>
+              <span id="span9">{{ player.shooting }}</span>
+            </div>
+            <div class="card-text-pair" id="div19">
+              <span id="span10">{{ "PASE" | translate }}</span>
+              <span id="span11">{{ player.passing }}</span>
+            </div>
+            <div class="card-text-pair" id="div20">
+              <span id="span12">{{ "REGATE" | translate }}</span>
+              <span id="span13">{{ player.dribbling }}</span>
+            </div>
+            <div class="card-text-pair" id="div21">
+              <span id="span14">{{ "DEFENSA" | translate }}</span>
+              <span id="span15">{{ player.defence }}</span>
+            </div>
+            <div class="card-text-pair" id="div22">
+              <span id="span16">{{ "FISICO" | translate }}</span>
+              <span id="span17">{{ player.physical }}</span>
+            </div>
+            <div class="card-text-pair" id="div23">
+              <span id="span18">{{ "EDAD" | translate }}</span>
+              <span id="span19">{{ player.age }}</span>
+            </div>
+            <div class="card-text-pair" id="div24">
+              <span id="span20">{{ "NACIONALIDAD" | translate }}</span>
+              <span id="span21">{{ player.nationality }}</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class="col text-center" id="div25">
-  <button class="btn btn-primary" id="btn2" (click)="goToPlayerVideos()">
-    {{ "VIDEOS-BOTON" | translate }}
-  </button>
+  <div class="col text-center" id="div25">
+    <button class="btn btn-primary" id="btn2" (click)="goToPlayerVideos()">
+      {{ "VIDEOS-BOTON" | translate }}
+    </button>
+  </div>
 </div>
