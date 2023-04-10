@@ -9,7 +9,19 @@ This is my fifa players project, I hope you like it.
 
 This project features four players selected from different soccer clubs and shows their statistics, videos of their best plays and career history.
 
-Functionality: 
+### Functionalities:
+
+Maing page: Here you have a page where you can choose your fauvorite player.
+
+Player stats: Stats of the choosen player
+
+Player videos: Highlights of the players
+
+Player career: A table that shows data of the career's player
+
+Not found: A custom template for when the user enters a route that does not exist
+
+Interceptor: Creation of a interceptor that could manage http errors
 
 
 ## Screenshots
