@@ -9,10 +9,14 @@ This is my fifa players project, I hope you like it.
 
 This project features four players selected from different soccer clubs and shows their statistics, videos of their best plays and career history.
 
+Functionality: 
+
 
 ## Screenshots
 
-Desktop navbar:
+# Desktop 
+
+Navbar:
 
 ![nav-fifa](https://user-images.githubusercontent.com/83543738/229783584-62b6bcc9-e577-4baa-a409-b16a4efdee56.PNG)
 
@@ -23,7 +27,6 @@ Desktop body:
 Desktop footer imported by my library:
 
 ![footer](https://user-images.githubusercontent.com/83543738/229783952-78067129-a2c9-44f7-81a5-13061354661d.PNG)
-
 
 
 Player stats component view:
@@ -39,7 +42,7 @@ PlayerCareer component view:
 ![player-career](https://user-images.githubusercontent.com/83543738/229785546-4794d294-c8b8-4317-9185-fcca153224a5.PNG)
 
 
-Mobile:
+# Mobile:
 
 Cards component:
 
@@ -56,6 +59,10 @@ Highlights:
 Player career:
 
 ![playercareer-mobile](https://user-images.githubusercontent.com/83543738/229786483-e3321633-e2a2-40f7-aca9-ccea3b1bebd6.PNG)
+
+ 
+
+
 
 
 ## Run Locally
