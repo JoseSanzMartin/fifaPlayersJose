@@ -72,17 +72,11 @@ Go to the project directory
   cd fifaPlayers
 ```
 
-Install dependencies
+Install dependencies(this instruction will install all the necessary dependencies included in my package.json)
 
 ```bash
   npm install
 ```
-
-```bash
-  npm install footer-jose-v
-```
-
-```npm install @ngx-translate/core @ngx-translate/http-loader --save```
 
 Start the dev server and open a new window
 
