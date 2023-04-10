@@ -1,4 +1,7 @@
 .not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 2rem;
   background-image: url("/assets/images/vueling.jpg");
@@ -6,9 +9,15 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
+  .error-404 {
+    font-weight: bold;
+    margin-bottom: 10rem;
+  }
+
   h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+    color: #fbc900;
+    font-size: 4rem;
   }
 
   .btn {
