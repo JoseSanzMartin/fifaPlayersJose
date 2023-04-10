@@ -23,6 +23,10 @@ Not found: A custom template for when the user enters a route that does not exis
 
 Interceptor: Creation of a interceptor that could manage http errors
 
+## Design
+
+I have used mobile first design and mixxins to reuse css code.
+
 
 ## Screenshots
 
