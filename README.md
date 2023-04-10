@@ -14,7 +14,7 @@ Functionality:
 
 ## Screenshots
 
-# Desktop 
+### Desktop 
 
 Navbar:
 
@@ -42,7 +42,7 @@ PlayerCareer component view:
 ![player-career](https://user-images.githubusercontent.com/83543738/229785546-4794d294-c8b8-4317-9185-fcca153224a5.PNG)
 
 
-# Mobile:
+### Mobile:
 
 Cards component:
 
@@ -64,8 +64,9 @@ Player career:
 
 
 
+## Instructions to installation
 
-## Run Locally
+### Run Locally
 
 Clone the project
 
@@ -98,7 +99,7 @@ My project is available at:
 
 https://fifa-players-alpha.vercel.app/cards-players
 
-## Color Reference
+### Color Reference
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
@@ -107,11 +108,11 @@ https://fifa-players-alpha.vercel.app/cards-players
 | Body background | #FFFFFF |
 
 
-## Authors
+### Authors
 
 - [José Sanz Martín](https://github.com/JoseSanzMartin)
 
 
-## License
+### License
 
 [MIT](https://choosealicense.com/licenses/mit/)
