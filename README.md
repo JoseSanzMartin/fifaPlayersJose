@@ -115,6 +115,8 @@ https://fifa-players-alpha.vercel.app/cards-players
 
 As an example of integration of solid principles we could talk about principle I (interface segregation principle). I have used several interfaces, as it suggests that interfaces should be small and specific, rather than large and generic.
 
+Another example is the use of the single responsability principle. In this project an example could be to pull the data read from the service to a ts file. 
+
 ## Interceptor
 
 I have added an interceptor to control the errors, although angular already has the ability to catch path not found errors. Interceptors could be used meaningfully to pick up all kinds of errors and act one way or another depending on the error that comes to them.
