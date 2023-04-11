@@ -27,6 +27,10 @@ Interceptor: Creation of a interceptor that could manage http errors
 
 I have used mobile first design and mixxins to reuse css code.
 
+## Assets
+
+About the images, I consider that it is better if they are in an image repository outside github, in google drive or some other alternative. Considering that this was an exam and wanting to have them in the same project so that they can be accessed from here I have left them in the assets/images folder.
+
 
 ## Screenshots
 
