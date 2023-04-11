@@ -25,7 +25,8 @@ Interceptor: Creation of a interceptor that could manage http errors
 
 ## Design
 
-I have used mobile first design and mixxins to reuse css code.
+I have used mobile first design and mixxins to reuse css code. 
+In my project I have used a library that I have created for the footer of my exam. The repository can be found at:
 
 ## Assets
 
