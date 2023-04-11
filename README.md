@@ -23,6 +23,10 @@ Not found: A custom template for when the user enters a route that does not exis
 
 Interceptor: Creation of a interceptor that could manage http errors
 
+## Navigation:
+
+I have decided to implement breadcrumb and back button for usability reasons. I consider that depending on the user's profile, it is possible that the person does not know how to use the breadcrumb. This way there could be two options to navigate between pages
+
 ## Design
 
 I have used mobile first design and mixxins to reuse css code. 
